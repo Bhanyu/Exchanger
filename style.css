@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+#main-header{
+    background-color: #F5F5F6;
+
+   
+}
+.container{
+    
+    max-width: 1300px;
+    padding: 20px 0;
+    margin: 0 auto;
+}
+.head_part{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav{
+   
+    display: flex;
+}
+.nav_list{
+ 
+    display: flex;
+}
+.nav_list{
+ 
+    margin: 0 20px;
+}
+.nav_list a{
+  font-size: 15px;
+
+
+text-decoration: none;
+font-weight: 500;
+color: #959BA4;
+ 
+}
+
+.nav_list a.black_nav_link{
+  color: black;
+   
+  }
+.exit{
+    padding: 15px 10px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    background-color:#FFFFFF;
+    border: none;
+}
+#exc-section{
+   
+ max-width: 100%;
+
+}
+#exc-section .container{
+
+    margin-top: 50px;
+
+}
+.inner-part{
+
+ 
+  
+ max-width: 100%;
+margin-left: 10%;
+
+  
+}
+.inner-part h2{
+   font-size: 36px;
+   margin-bottom: 40px;
+   margin-left: 10%;
+
+}
+.exchange-part{
+    display: flex;
+  
+    max-width: 80%;
+    margin: 0 auto;
+}
+/* .exchange {
+background-color: red;
+
+
+} */
+.exchange-options{
+    display: flex;
+    border: 1px solid  #E5E5E5;
+    border-radius: 3px;
+}
+.exchange-options div{
+
+ padding: 10px 24px;
+ font-size: 12px;
+ color: #C6C6C6;
+ overflow: hidden;
+
+}
+.rub{
+    border-right: 1px solid #E5E5E5;
+}
+.active{
+    background-color:blueviolet;
+}
+.usd{
+    border-right: 1px solid #E5E5E5;
+}
+.eur{
+    border-right: 1px solid #E5E5E5;
+}
+.rub2{
+    border-right: 1px solid #E5E5E5;
+}
+
+.usd2{
+    border-right: 1px solid #E5E5E5;
+}
+.eur2{
+    border-right: 1px solid #E5E5E5;
+}
+
+
+.exchange p {
+  font-size: 12px;
+  color: #9F9F9F;
+  margin-bottom: 10px;
+    
+
+    }
+    .exchange{
+        max-width: 30%;
+    }
+.first{
+    margin-right: 50px;
+}
+.value-indicator{
+  background-color:#ffffff ;
+    margin-top: 18px;
+    padding: 10px 15px;
+    border-radius: 3px;
+   border: 1px solid  #E5E5E5;
+}
+
+.excvalue {
+margin-bottom: 40px;
+font-size: 36px;
+max-width: 100%;
+border: none;
+outline: none;
+}
+.excequation{
+    font-size: 12px;
+    color: #C6C6C6;
+}
+.hidden1,
+.hidden2{
+    display: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+margin:0;
+}
