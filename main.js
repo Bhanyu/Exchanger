@@ -19,7 +19,6 @@ const err = document.querySelector(".internet-error")
 
 const URL = 'https://v6.exchangerate-api.com/v6/f042570fb25bb227b790b7fb/latest/';
 
-
 let currentLeftPrice = 0;
 let price;
 let lastType = null;
@@ -38,7 +37,7 @@ subSecVal.innerHTML = `1 ${rightValue} = ${price.toFixed(4)} ${leftValue}`;
 if (lastType === "firstamount" || lastType === null) {
     getCalculationFirst()
 }
-else if(lastType === "secondamount"){
+else if(lastType === "secondamount" ){
     getCalculationSecond()
 }
     })
@@ -51,11 +50,13 @@ else if(lastType === "secondamount"){
 }
 
 function getCalculationFirst(){
-    let integerValFirst = parseFloat(firstVal.value );
-    if (!isNaN(integerValFirst)) {
+    let integerValFirst = parseFloat(firstVal.value);
+    if (!isNaN(integerValFirst) ) {
         let handlingVal = integerValFirst * currentLeftPrice;
         secondVal.value = handlingVal.toFixed(4);
     }
+
+  
     else{
         secondVal.value = '';
     }
@@ -68,21 +69,41 @@ function getCalculationSecond(){
         let handlingValSec = integerValSecond / currentLeftPrice;
         firstVal.value = handlingValSec.toFixed(4);
     }
+
+ 
     else{
         firstVal.value = '';
     }
 }
 
 firstVal.addEventListener("keyup", ()=>{
+    
+      
+    
+ 
     lastType = "firstamount";
+    
     getCalculationFirst();
+   
 });
 secondVal.addEventListener("keyup", ()=>{
+   
+ 
     lastType = "secondamount";
+  
     getCalculationSecond();
+   
 });
 
 firstVal.value = 1200;
+firstVal.addEventListener('input', () => {
+
+    firstVal.value = firstVal.value.replace(/-/g, '');
+});
+secondVal.addEventListener('input', () => {
+
+    secondVal.value = secondVal.value.replace(/-/g, '');
+});
 
 getResult("RUB","USD");
 
