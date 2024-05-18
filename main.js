@@ -30,6 +30,7 @@ fetch(`${URL}${leftValue}`)
 .then(data=>
     {
 currentLeftPrice = data.conversion_rates[rightValue];
+
 price = 1 / currentLeftPrice;
 subFirstVal.innerHTML = `1 ${leftValue} = ${currentLeftPrice.toFixed(4)} ${rightValue}`;
 subSecVal.innerHTML = `1 ${rightValue} = ${price.toFixed(4)} ${leftValue}`;
