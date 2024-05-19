@@ -17,7 +17,7 @@ const firstHidden = document.querySelector(".hidden1")
 const secondHidden = document.querySelector(".hidden2")
 const err = document.querySelector(".internet-error")
 
-const URL = 'https://v6.exchangerate-api.com/v6/f042570fb25bb227b790b7fb/latest/';
+const URL = 'https://v6.exchangerate-api.com/v6/4d49e6e33a9474b45953d037/latest/';
 
 let currentLeftPrice = 0;
 let price;
@@ -78,9 +78,6 @@ function getCalculationSecond(){
 
 firstVal.addEventListener("keyup", ()=>{
     
-      
-    
- 
     lastType = "firstamount";
     
     getCalculationFirst();
